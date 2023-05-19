@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+    <!-- container -->
+    <div class="container">
+
+        <!-- heading -->
+        <h1 class="heading">PASSWORD GENERATOR</h1>
+
+        <!-- input box for password -->
+        <div class="passInputBox">
+
+            <!-- input box -->
+            <input type="text" class="passBox" id="passBox" disabled placeholder="ABCDabcd1234!@#$">
+
+            <!-- copy icon -->
+            <i id="copy" class="fa-solid fa-clipboard"></i>
+        </div>
+
+        <!-- range bar to select the length of password -->
+        <input type="range" min="4" max="30" value="8" id="range">
+
+        <!-- password length -->
+        <div class="row">
+            <label for="password-length">
+                <div class="left">
+                    Password length
+                </div>
+            </label>
+            <span id="password-length">8</span>
+        </div>
+
+        <!-- uppercase -->
+        <div class="row">
+            <label for="upper-case">
+                <div class="left">
+                    Contains Uppercase
+                </div>
+            </label>
+            <div class="right">
+                <input type="checkbox" name="" id="upper-case" checked />
+            </div>
+        </div>
+
+        <!-- lowercase -->
+        <div class="row">
+            <label for="lower-case">
+                <div class="left">
+                    Contains Lowercase
+                </div>
+            </label>
+            <div class="right">
+                <input type="checkbox" name="" id="lower-case" checked/>
+            </div>
+        </div>
+
+        <!-- numbers -->
+        <div class="row">
+            <label for="numbers">
+                <div class="left">
+                    Contains Numbers
+                </div>
+            </label>
+            <div class="right">
+                <input type="checkbox" name="" id="numbers" checked/>
+            </div>
+        </div>
+
+        <!-- symbols -->
+        <div class="row">
+            <label for="symbols">
+                <div class="left">
+                    Contains Symbols
+                </div>
+            </label>
+            <div class="right">
+                <input type="checkbox" name="" id="symbols" checked/>
+            </div>
+        </div>
+
+        <div class="row">
+            <button id="btn">
+                Generate
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- ------------------------------------------------- -->
+
+
+    <!-- custom js link -->
+    <script src="/script.js"></script>
+
+
+
+</body>
+
+</html>
